@@ -1,0 +1,10 @@
+team,pitcher,pitcher_id,IP,H,R,ER,BB,SO,HR,earned_run_avg,batters_faced,pitches,strikes_total,strikes_contact,strikes_swinging,strikes_looking,inplay_gb_total,inplay_fb_total,inplay_ld,inplay_unk,game_score,inherited_runners,inherited_score,wpa_def,leverage_index_avg,cwpa_def,cli_avg,re24_def,game_date
+ARI,"Zac Gallen, L (7-10)",galleza01,5,8,6,6,2,3,1,5.40,24,88,54,31,7,16,10,9,5,0,28,,,-0.385,0.97,-0.10%,0.40,-3.5,2025-07-12
+ARI,Andrew Saalfrank,saalfan01,2,2,0,0,0,2,0,0.00,8,27,21,11,5,5,4,2,0,0,,0,0,0.030,0.31,0.01%,0.13,1.0,2025-07-12
+ARI,Juan Morillo,morilju02,1,5,4,4,0,1,0,4.94,8,27,18,11,2,5,2,5,4,0,,0,0,-0.126,0.67,-0.03%,0.28,-3.5,2025-07-12
+LOS,"Yusei Kikuchi, W (4-6)",kikucyu01,5.2,6,3,3,1,5,2,3.11,24,93,67,44,6,17,5,13,7,0,49,,,-0.032,0.73,-0.01%,0.46,-0.6,2025-07-12
+LOS,"Ryan Zeferjahn, H (15)",zeferry01,0.1,0,0,0,0,0,0,5.66,1,9,7,5,2,0,1,0,0,0,,2,0,0.060,1.99,0.02%,1.26,0.6,2025-07-12
+LOS,"Reid Detmers, H (8)",detmere01,1,0,0,0,0,1,0,4.15,3,9,8,5,1,2,1,1,1,0,,0,0,0.047,0.61,0.02%,0.38,0.5,2025-07-12
+LOS,"JosÃ© Fermin, H (2)",fermijo02,0.1,1,2,2,2,1,0,3.86,4,22,12,5,2,5,1,0,0,0,,0,0,-0.132,1.48,-0.05%,0.93,-1.1,2025-07-12
+LOS,"Sam Bachman, H (1)",bachmsa01,0.2,1,0,0,1,1,0,3.27,4,16,10,5,2,3,2,0,0,0,,3,2,0.069,4.83,0.03%,3.05,-0.4,2025-07-12
+LOS,Connor Brogdon,brogdco01,1,0,0,0,0,0,0,4.97,3,13,9,6,1,2,1,2,1,0,,0,0,0.006,0.08,0.00%,0.05,0.5,2025-07-12

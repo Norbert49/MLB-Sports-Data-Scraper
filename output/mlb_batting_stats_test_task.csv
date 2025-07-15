@@ -1,0 +1,31 @@
+team,player,player_id,AB,R,H,RBI,BB,SO,PA,batting_avg,onbase_perc,slugging_perc,onbase_plus_slugging,pitches,strikes_total,wpa_bat,leverage_index_avg,wpa_bat_pos,wpa_bat_neg,cwpa_bat,cli_avg,re24_bat,PO,A,game_date
+ARI,Ketel Marte 2B,marteke01,5,0,0,0,0,0,5,.290,.394,.567,.961,16,11,-0.080,0.61,0.000,-0.080,-0.02%,0.25,-1.0,5,1,2025-07-12
+ARI,Corbin Carroll RF,carroco02,5,1,1,0,0,0,5,.249,.329,.558,.887,16,13,0.009,0.53,0.054,-0.046,0.00%,0.22,-0.0,2,0,2025-07-12
+ARI,Lourdes Gurriel Jr. LF,gurrilo01,5,1,1,0,0,1,5,.251,.297,.422,.718,25,19,-0.062,0.69,0.018,-0.081,-0.01%,0.29,-0.6,2,0,2025-07-12
+ARI,Eugenio SuÃ¡rez 3B,suareeu01,3,3,2,2,1,0,4,.249,.318,.568,.886,18,11,0.252,0.94,0.272,-0.020,0.06%,0.39,1.9,1,2,2025-07-12
+ARI,Josh Naylor 1B,naylojo01,3,0,1,0,1,1,4,.295,.364,.460,.823,13,9,0.057,1.10,0.097,-0.040,0.01%,0.45,0.5,6,1,2025-07-12
+ARI,Randal Grichuk DH,grichra01,3,0,1,1,0,2,3,.242,.282,.466,.747,12,9,0.043,0.72,0.071,-0.028,0.01%,0.30,0.9,0,0,2025-07-12
+ARI,Jake McCarthy PH-DH-DH,mccarja02,1,0,0,0,0,1,1,.141,.229,.247,.476,6,4,-0.090,3.93,0.000,-0.090,-0.02%,1.62,-0.8,0,0,2025-07-12
+ARI,James McCann C,mccanja02,4,0,2,1,0,1,4,.375,.516,.708,1.224,22,17,0.004,1.70,0.093,-0.089,0.00%,0.70,0.3,6,1,2025-07-12
+ARI,Alek Thomas CF,thomaal01,3,0,0,1,1,1,4,.248,.298,.370,.668,17,9,0.049,1.93,0.116,-0.067,0.01%,0.80,0.4,1,0,2025-07-12
+ARI,Geraldo Perdomo SS,perdoge01,3,0,0,0,1,1,4,.266,.368,.415,.783,17,11,-0.200,2.25,0.016,-0.216,-0.05%,0.93,-1.0,0,6,2025-07-12
+ARI,Zac Gallen P,galleza01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,1,1,2025-07-12
+ARI,Andrew Saalfrank P,saalfan01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+ARI,Juan Morillo P,morilju02,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,Zach Neto SS,netoza01,5,2,2,1,0,0,5,.277,.321,.492,.813,19,10,0.030,0.82,0.079,-0.049,0.01%,0.52,0.7,1,0,2025-07-12
+LAA,Nolan Schanuel 1B,schanno01,4,1,3,1,1,0,5,.278,.368,.405,.773,14,8,0.086,0.71,0.104,-0.018,0.03%,0.45,2.2,10,0,2025-07-12
+LAA,Mike Trout DH,troutmi01,4,1,2,4,1,1,5,.236,.359,.471,.830,25,17,0.159,0.76,0.178,-0.020,0.06%,0.48,3.3,0,0,2025-07-12
+LAA,Taylor Ward LF,wardta01,5,1,1,1,0,0,5,.227,.300,.473,.774,18,12,0.064,0.76,0.081,-0.018,0.02%,0.48,-1.0,1,0,2025-07-12
+LAA,Jo Adell CF,adelljo01,4,1,1,1,0,1,4,.243,.318,.483,.800,15,10,0.061,0.90,0.127,-0.066,0.02%,0.56,-0.1,4,0,2025-07-12
+LAA,YoÃ¡n Moncada 3B,moncayo01,4,1,1,0,0,0,4,.233,.323,.483,.806,12,7,-0.040,0.91,0.020,-0.060,-0.01%,0.57,-0.4,0,3,2025-07-12
+LAA,Kevin Newman 3B,newmake01,0,0,0,0,0,0,0,.207,.215,.261,.476,None,None,None,None,None,None,None,None,None,2,0,2025-07-12
+LAA,Jorge Soler RF,solerjo01,3,0,1,1,0,1,4,.211,.288,.368,.656,18,12,0.047,0.94,0.071,-0.023,0.02%,0.59,0.9,2,0,2025-07-12
+LAA,LaMonte Wade Jr. PR-RF,wadela01,0,1,0,0,0,0,0,.167,.271,.247,.518,None,None,0.000,None,0.000,0.000,0%,None,0.0,0,0,2025-07-12
+LAA,Travis d'Arnaud C,darnatr01,4,2,2,0,0,1,4,.241,.285,.433,.717,8,7,0.028,0.61,0.056,-0.027,0.01%,0.39,0.5,7,1,2025-07-12
+LAA,Luis Rengifo 2B,rengilu01,4,0,2,1,0,2,4,.239,.279,.323,.601,13,9,0.047,0.72,0.111,-0.064,0.02%,0.46,-0.3,0,4,2025-07-12
+LAA,Yusei Kikuchi P,kikucyu01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,Ryan Zeferjahn P,zeferry01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,Reid Detmers P,detmere01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,JosÃ© Fermin P,fermijo02,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,Sam Bachman P,bachmsa01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12
+LAA,Connor Brogdon P,brogdco01,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,0,0,2025-07-12

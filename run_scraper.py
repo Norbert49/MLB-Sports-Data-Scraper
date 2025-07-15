@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-"""
-MLB Data Scraper Pipeline Runner
-This script demonstrates how to run the MLB data scraping pipeline
-and provides an example for the Upwork application.
-"""
 
 import os
 import sys
 from datetime import datetime
-from pipeline import MLBDataScraper # Corrected import path
+from pipeline import MLBDataScraper
 
 def main():
-    """Main function to run the MLB data scraping pipeline."""
-    
     print("⚾ MLB Data Scraping Pipeline")
     print("="*50)
     print("Starting MLB data collection and Google Sheets upload...")
@@ -24,7 +17,6 @@ def main():
         print("Please ensure you have your Google Sheets API credentials file.")
         sys.exit(1)
     
-
     test_task_url = None
     if len(sys.argv) > 2 and sys.argv[1] == '--test-url':
         test_task_url = sys.argv[2]
@@ -36,18 +28,15 @@ def main():
         print("Running for recent games (default mode)...")
     
     try:
-
         print("🔧 Initializing scraper...")
         scraper = MLBDataScraper(config_file='config.json')
         
-        # Run the pipeline based on mode
         print("📊 Running data collection pipeline...")
         if test_task_url:
             results = scraper.run_pipeline(game_url_for_test=test_task_url)
         else:
-            results = scraper.run_pipeline(days_back=2) # Default to last 2 days if no specific URL
+            results = scraper.run_pipeline(days_back=5) # Changed days_back to 5
         
-        # Display results
         print("\n" + "="*50)
         print("📈 PIPELINE RESULTS")
         print("="*50)
@@ -57,7 +46,7 @@ def main():
             print(f"📊 Games processed: {results['games_processed']}")
             print(f"⚾ Batting records: {results['batting_records']}")
             print(f"🥎 Pitching records: {results['pitching_records']}")
-            print(f"📝 Lineup records: {results['lineup_records']}") # Display lineup records
+            print(f"📝 Lineup records: {results['lineup_records']}")
             
             if results['google_sheets_url']:
                 print(f"\n🔗 Google Sheets URL:")
@@ -72,7 +61,6 @@ def main():
                     else:
                         print(f"   ❌ {csv_file} (not found)")
             
-            # Display sample data (simplified as columns are dynamically scraped)
             print("\n📋 Data Structure Overview:")
             print("-" * 30)
             print("Batting stats columns: Player, Team, AB, R, H, RBI, BB, SO, AVG (and more depending on source)")
@@ -82,7 +70,6 @@ def main():
         else:
             print("❌ Pipeline failed!")
         
-        # Display any errors
         if results['errors']:
             print(f"\n⚠️  Errors encountered:")
             for error in results['errors']:
@@ -95,18 +82,15 @@ def main():
     except Exception as e:
         print(f"❌ Fatal error during pipeline execution: {e}")
         import traceback
-        traceback.print_exc() # Print full traceback for debugging
+        traceback.print_exc()
         sys.exit(1)
 
 def demo_mode():
-    """Run a demo version with sample data for testing."""
     print("🧪 Running in DEMO mode...")
     print("This will create sample data for testing purposes in 'demo_output' folder and a Google Sheet named 'MLB Data Analysis - Upwork Demo'.")
     
-    # Create sample data
     import pandas as pd
     
-    # Sample batting data
     batting_sample = pd.DataFrame({
         'team': ['NYY', 'BOS', 'NYY', 'BOS'],
         'game_date': ['2025-07-10', '2025-07-10', '2025-07-10', '2025-07-10'],
@@ -116,7 +100,6 @@ def demo_mode():
         'avg': [.311, .279, .245, .307]
     })
     
-    # Sample pitching data
     pitching_sample = pd.DataFrame({
         'team': ['NYY', 'BOS'],
         'game_date': ['2025-07-10', '2025-07-10'],
@@ -125,7 +108,6 @@ def demo_mode():
         'bb': [1, 2], 'so': [8, 5], 'era': [3.12, 4.21]
     })
 
-    # Sample lineup data (NEW)
     lineup_sample = pd.DataFrame({
         'team': ['NYY', 'NYY', 'NYY', 'BOS', 'BOS'],
         'game_date': ['2025-07-10'] * 5,
@@ -135,14 +117,12 @@ def demo_mode():
     })
     
     try:
-        scraper = MLBDataScraper(config_file='config.json') # Ensure config is loaded for output path etc.
+        scraper = MLBDataScraper(config_file='config.json')
         
-        # Export sample data to CSVs
         csv_files_demo = scraper.export_to_csv(
-            batting_sample, pitching_sample, lineup_sample, 'demo_output', for_test_task=False # Changed to False for demo
+            batting_sample, pitching_sample, lineup_sample, 'demo_output', for_test_task=False
         )
         
-        # Upload to Google Sheets
         google_url = scraper.upload_to_google_sheets(batting_sample, pitching_sample, lineup_sample)
         
         print(f"\n✅ Demo completed successfully!")
